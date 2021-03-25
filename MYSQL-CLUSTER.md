@@ -53,7 +53,43 @@ docker run -d --net=cluster --name=mysql1 --ip=192.168.0.10 -e MYSQL_RANDOM_ROOT
 <img width="1198" alt="image" src="https://user-images.githubusercontent.com/56558508/112520277-306e8800-8dd6-11eb-867d-000bb98b5988.png">
 
 
-```docker run -d --net=cluster --name=ndb1 --ip=192.168.0.3 mysql/mysql-cluster ndbd
+6. The server will be initialized with a randomized password that will need to be changed, fetch it from the log
+```
+docker logs mysql1 2>&1 | grep PASSWORD
 ```
 
-6. 
+<img width="629" alt="image" src="https://user-images.githubusercontent.com/56558508/112521394-6c561d00-8dd7-11eb-8c66-1a21e9736610.png">
+
+
+7. Login, input the password that you got from step 6. If there is an error: «ERROR 2002 (HY000): Can't connect to local MySQL server through socket» then the server has not finished initializing yet.
+```
+docker exec -it mysql1 mysql -uroot -p
+```
+
+<img width="974" alt="image" src="https://user-images.githubusercontent.com/56558508/112522043-251c5c00-8dd8-11eb-9f5c-408097cb21ce.png">
+
+
+8. Change the password
+```
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+```
+
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/56558508/112522148-3e250d00-8dd8-11eb-8976-d298e8d62eb3.png">
+
+
+9. Open a new terminal and start the container with an interactive management client to verify that the cluster is up
+
+<img width="1104" alt="image" src="https://user-images.githubusercontent.com/56558508/112522318-72003280-8dd8-11eb-9ad6-5464fbbd6e07.png">
+
+
+```
+docker run -it --net=cluster mysql/mysql-cluster ndb_mgm
+```
+<img width="744" alt="image" src="https://user-images.githubusercontent.com/56558508/112522462-a07e0d80-8dd8-11eb-8a6b-98838133ffe8.png">
+
+
+10. Run 'show' command to see the cluster status
+
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/56558508/112522582-c6a3ad80-8dd8-11eb-93cc-dbe10cc54718.png">
+
+
