@@ -59,7 +59,7 @@ docker run -p 3360:3360 -d --net=cluster --name=mysql1 --ip=192.168.0.10 -e MYSQ
 docker logs mysql1 2>&1 | grep PASSWORD
 ```
 
-<img width="629" alt="image" src="https://user-images.githubusercontent.com/56558508/112521394-6c561d00-8dd7-11eb-8c66-1a21e9736610.png">
+<img width="630" alt="image" src="https://user-images.githubusercontent.com/56558508/112537895-31a9b000-8dea-11eb-8053-7f1f3f68afd4.png">
 
 
 7. Login, input the password that you got from step 6. If there is an error: «ERROR 2002 (HY000): Can't connect to local MySQL server through socket» then the server has not finished initializing yet.
