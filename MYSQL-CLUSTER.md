@@ -5,7 +5,7 @@
    * For windows: https://docs.docker.com/docker-for-windows/install/
    * For mac: https://docs.docker.com/docker-for-mac/install/
   
-Followed the steps from https://hub.docker.com/r/mysql/mysql-cluster/ using mac local machine.
+Using mac local machine:
 
 1. Run a docker pull command
 ```
