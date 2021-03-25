@@ -76,6 +76,10 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
 
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/56558508/112522148-3e250d00-8dd8-11eb-8976-d298e8d62eb3.png">
 
+* just to see the status information from the server
+
+<img width="860" alt="image" src="https://user-images.githubusercontent.com/56558508/112523290-94df1680-8dd9-11eb-9deb-c621fc5ac22e.png">
+
 
 9. Open a new terminal and start the container with an interactive management client to verify that the cluster is up
 
