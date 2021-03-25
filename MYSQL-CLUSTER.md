@@ -64,10 +64,10 @@ docker logs mysql1 2>&1 | grep PASSWORD
 
 7. Login, input the password that you got from step 6. If there is an error: «ERROR 2002 (HY000): Can't connect to local MySQL server through socket» then the server has not finished initializing yet.
 ```
-docker exec -it mysql1 mysql -uroot -p
+docker exec -it mysql1 mysql -uroot -p -h 127.0.0.1
 ```
 
-<img width="974" alt="image" src="https://user-images.githubusercontent.com/56558508/112522043-251c5c00-8dd8-11eb-9f5c-408097cb21ce.png">
+<img width="710" alt="image" src="https://user-images.githubusercontent.com/56558508/112538974-6833fa80-8deb-11eb-8c9e-af4eeb4c8969.png">
 
 
 8. Change the password
@@ -75,26 +75,41 @@ docker exec -it mysql1 mysql -uroot -p
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
 ```
 
-<img width="461" alt="image" src="https://user-images.githubusercontent.com/56558508/112522148-3e250d00-8dd8-11eb-8976-d298e8d62eb3.png">
+<img width="473" alt="image" src="https://user-images.githubusercontent.com/56558508/112539046-78e47080-8deb-11eb-9f02-b490673832e9.png">
+
 
 * just to see the status information from the server
 
-<img width="860" alt="image" src="https://user-images.githubusercontent.com/56558508/112523290-94df1680-8dd9-11eb-9deb-c621fc5ac22e.png">
+<img width="847" alt="image" src="https://user-images.githubusercontent.com/56558508/112539128-90235e00-8deb-11eb-8fc3-a2521e9b9e59.png">
 
 
-9. Open a new terminal and start the container with an interactive management client to verify that the cluster is up
+9. To check the database type 'show databases;'
 
-<img width="1104" alt="image" src="https://user-images.githubusercontent.com/56558508/112522318-72003280-8dd8-11eb-9ad6-5464fbbd6e07.png">
+<img width="176" alt="image" src="https://user-images.githubusercontent.com/56558508/112539310-cfea4580-8deb-11eb-9de3-9dfe578726c5.png">
 
+
+10. From here to validate if you can create a database, type 'create database <nameOfDatabase>;'
+
+<img width="255" alt="image" src="https://user-images.githubusercontent.com/56558508/112539555-19d32b80-8dec-11eb-8139-b84ead729e8d.png">
+
+
+11. Check if it is added by 'show databases;'
+
+<img width="177" alt="image" src="https://user-images.githubusercontent.com/56558508/112539701-471fd980-8dec-11eb-87de-c5730737b6a9.png">
+
+
+12. Open a new terminal and start the container with an interactive management client to verify that the cluster is up
 
 ```
 docker run -it --net=cluster mysql/mysql-cluster ndb_mgm
 ```
+
 <img width="744" alt="image" src="https://user-images.githubusercontent.com/56558508/112522462-a07e0d80-8dd8-11eb-8a6b-98838133ffe8.png">
 
 
-10. Run 'show' command to see the cluster status
+13. Run 'show' command to see the cluster status
 
-<img width="454" alt="image" src="https://user-images.githubusercontent.com/56558508/112522582-c6a3ad80-8dd8-11eb-93cc-dbe10cc54718.png">
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/56558508/112540234-e47b0d80-8dec-11eb-8186-36d14457f9e3.png">
+
 
 
