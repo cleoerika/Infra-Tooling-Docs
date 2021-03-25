@@ -31,9 +31,29 @@ docker network create cluster --subnet=192.168.0.0/16
 ```
 docker run -d --net=cluster --name=management1 --ip=192.168.0.2 mysql/mysql-cluster ndb_mgmd
 ```
+<img width="998" alt="image" src="https://user-images.githubusercontent.com/56558508/112519861-be963e80-8dd5-11eb-9110-3728620c5270.png">
 
 
- 
+4. Then the two nodes
+```
+docker run -d --net=cluster --name=ndb1 --ip=192.168.0.3 mysql/mysql-cluster ndbd
+```
+
+```
+docker run -d --net=cluster --name=ndb2 --ip=192.168.0.4 mysql/mysql-cluster ndbd
+```
+
+<img width="928" alt="image" src="https://user-images.githubusercontent.com/56558508/112520088-04530700-8dd6-11eb-99ac-969700a8cdb3.png">
+
+
+5. And the MySQL server node
+```
+docker run -d --net=cluster --name=mysql1 --ip=192.168.0.10 -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql/mysql-cluster mysqld
+```
+<img width="1198" alt="image" src="https://user-images.githubusercontent.com/56558508/112520277-306e8800-8dd6-11eb-867d-000bb98b5988.png">
+
+
+```docker run -d --net=cluster --name=ndb1 --ip=192.168.0.3 mysql/mysql-cluster ndbd
 
 
 
