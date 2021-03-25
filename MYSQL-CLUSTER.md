@@ -83,17 +83,17 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
 <img width="847" alt="image" src="https://user-images.githubusercontent.com/56558508/112539128-90235e00-8deb-11eb-8fc3-a2521e9b9e59.png">
 
 
-9. To check the database type 'show databases;'
+9. To check the database type **'show databases;'**
 
 <img width="176" alt="image" src="https://user-images.githubusercontent.com/56558508/112539310-cfea4580-8deb-11eb-9de3-9dfe578726c5.png">
 
 
-10. From here to validate if you can create a database, type 'create database <nameOfDatabase>;'
+10. From here to validate if you can create a database, type **'create database <nameOfDatabase>;'**
 
 <img width="255" alt="image" src="https://user-images.githubusercontent.com/56558508/112539555-19d32b80-8dec-11eb-8139-b84ead729e8d.png">
 
 
-11. Check if it is added by 'show databases;'
+11. Check if it is added by **'show databases;'**
 
 <img width="177" alt="image" src="https://user-images.githubusercontent.com/56558508/112539701-471fd980-8dec-11eb-87de-c5730737b6a9.png">
 
@@ -107,7 +107,7 @@ docker run -it --net=cluster mysql/mysql-cluster ndb_mgm
 <img width="744" alt="image" src="https://user-images.githubusercontent.com/56558508/112522462-a07e0d80-8dd8-11eb-8a6b-98838133ffe8.png">
 
 
-13. Run 'show' command to see the cluster status
+13. Run **'show'** command to see the cluster status
 
 <img width="463" alt="image" src="https://user-images.githubusercontent.com/56558508/112540234-e47b0d80-8dec-11eb-8186-36d14457f9e3.png">
 
