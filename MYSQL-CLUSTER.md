@@ -88,7 +88,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
 <img width="176" alt="image" src="https://user-images.githubusercontent.com/56558508/112539310-cfea4580-8deb-11eb-9de3-9dfe578726c5.png">
 
 
-10. From here to validate if you can create a database, type **create database nameOfDatabase;**
+10. From here to validate if you can create a database, type **create database (nameOfDatabase);**
 
 <img width="255" alt="image" src="https://user-images.githubusercontent.com/56558508/112539555-19d32b80-8dec-11eb-8139-b84ead729e8d.png">
 
