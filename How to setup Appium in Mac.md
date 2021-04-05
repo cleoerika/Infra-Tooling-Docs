@@ -36,7 +36,41 @@ Click '+ Create Virtual Device...', window of Select Hardware will pop
 
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/56558508/113624383-27ad6a00-9692-11eb-858b-9164b6b15a34.png">
 
-Click '+ Create Virtual Device...', window of Select Hardware will pop
+Select 'Phone' from the Category and choose 'Nexus 5X' then click Next
+Select 'x86 Images' tab then look for API level 28 with ABI x86_64 and Target Android 9.0 (Google APIs)
+<img width="999" alt="image" src="https://user-images.githubusercontent.com/56558508/113624918-d18cf680-9692-11eb-95f5-58dd1141fd36.png">
+
+Click 'Download' and 'Accept'
+<img width="899" alt="image" src="https://user-images.githubusercontent.com/56558508/113625150-229cea80-9693-11eb-84ee-1f63d19a475d.png">
+
+It will start to install
+
+<img width="901" alt="image" src="https://user-images.githubusercontent.com/56558508/113625214-3a746e80-9693-11eb-8137-1be19c08e553.png">
+
+Then 'Finish'
+
+<img width="901" alt="image" src="https://user-images.githubusercontent.com/56558508/113625790-f5047100-9693-11eb-8814-c9d2e3d24d79.png">
+
+Since it is already installed the 'Next' button for the Pie 28 x86_64 will be enabled,
+
+<img width="999" alt="image" src="https://user-images.githubusercontent.com/56558508/113625956-2715d300-9694-11eb-875c-3390e7cb67c8.png">
+
+Next
+
+
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/56558508/113626045-3d239380-9694-11eb-81c5-2830a68d8d52.png">
+
+Finish, the device will be added in the list then close the window
+
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/56558508/113626148-5fb5ac80-9694-11eb-8268-a4d198ac51c3.png">
+
+You can now select 'Nexus 5X API 28' in the dropdown and click the green play button beside
+
+<img width="1401" alt="image" src="https://user-images.githubusercontent.com/56558508/113627035-7f99a000-9695-11eb-8da3-20e7b22922eb.png">
+
+The device will be launched
+
+<img width="502" alt="image" src="https://user-images.githubusercontent.com/56558508/113627153-ace64e00-9695-11eb-9110-a7537bb93b44.png">
 
 
 
