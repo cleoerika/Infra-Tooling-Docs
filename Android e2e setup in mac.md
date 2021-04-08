@@ -133,19 +133,21 @@
 
 5. Navigate to **Project > Import > Local Project > Open as New Project > From an Archive**, locate to where the downloaded zip files (Step 1)
 
+6. Navigate to **Build > Build Native Local**, Select **Android** under Mobile, Build Mode as **Release** and tick **Clean Build**
+7. Click **Build**
 
 <img width="1147" alt="image" src="https://user-images.githubusercontent.com/56558508/114101267-0ea5f280-98f8-11eb-9d48-2c96b52872bd.png">
 
-Place the automation APKs in the path **~/AndroidTest/apk**
 
-Change the following location in **PlatformQATest/sgconfig.properties**
-
-- pathToApkRootDir: path of **~/AndroidTest/apk**
-- pathToApkRootDirIosDevice: path of **~/AndroidTest/apk**
-- logRootDir: path of **~/AndroidTest/logs**
-- screenshotsRootDirectory: path of **~/androidautomation/Screenshots**
-- imageMagickLocation: install image magick software and give the path
-- isBaseLineScreenshotMode: Update the Boolean flag based on the usecase.
+#### Setting up the APKs and eclipse
+1. Place the automation APKs in the path **~/AndroidTest/apk**
+2. Change the following location in **PlatformQATest/sgconfig.properties**
+  - pathToApkRootDir: path of **~/AndroidTest/apk**
+  - pathToApkRootDirIosDevice: path of **~/AndroidTest/apk**
+  - logRootDir: path of **~/AndroidTest/logs**
+  - screenshotsRootDirectory: path of **~/androidautomation/Screenshots**
+  - imageMagickLocation: install image magick software and give the path
+  - isBaseLineScreenshotMode: Update the Boolean flag based on the usecase.
       * if true comparision will not happen actual screenshot will be copied to baseline folder
       * if false comparision will happen (used while testing)
 
