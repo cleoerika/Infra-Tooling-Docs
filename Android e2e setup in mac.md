@@ -1,6 +1,6 @@
 # E2E Android setup in Mac
 
-## Pre-requisite
+### Pre-requisite
 - JDK 8
 - Eclipse
 - TestNg for Eclipse
@@ -8,7 +8,10 @@
 - Android Studio (4.1.3 or latest version) https://developer.android.com/studio?gclid=EAIaIQobChMI0JfgsZvv7wIVlJ1LBR1CIwCHEAAYASAAEgKvr_D_BwE&gclsrc=aw.ds
 - Kony Visualizer (V9 SP2 FP13) https://community.kony.com/downloads
 
-
+### Steps:
+1. Clone the androidautomation and stargategalaxy repository
+* https://github01.hclpnp.com/phoenix-core/androidautomation
+* https://github01.hclpnp.com/phoenix-core/stargategalaxy
 Download and install Appium Desktop for mac 1.6.3 version from https://github.com/appium/appium-desktop/releases/tag/v1.6.3
 
 <img width="651" alt="image" src="https://user-images.githubusercontent.com/56558508/113621049-b966a880-968d-11eb-8540-713ea6e3671d.png">
