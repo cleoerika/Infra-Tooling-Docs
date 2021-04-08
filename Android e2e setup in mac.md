@@ -123,14 +123,29 @@
 #### Setting up Visualizer
 1. Download atleast 1 or 2 zip files from https://github01.hclpnp.com/phoenix-core/V9-Preview/tree/phx-dev/9.0
 2. Open Visualizer
-3. 
+3. Go to **Visualizer** then **Preferences**, update the path of **Android Home** and **Java Home**
 
+<img width="801" alt="image" src="https://user-images.githubusercontent.com/56558508/114108470-b8d84700-9905-11eb-8dc8-bcbe062f5dca.png">
+
+4. Go to **Project Settings**, make sure Target SDK is **10.0 (29)** and Android Architecture Support is **Support x86 Devices...**
+
+<img width="1167" alt="image" src="https://user-images.githubusercontent.com/56558508/114108602-f89f2e80-9905-11eb-87f0-56a2b3614af8.png">
+
+5. Navigate to **Project > Import > Local Project > Open as New Project > From an Archive**, locate to where the downloaded zip files (Step 1)
 
 
 <img width="1147" alt="image" src="https://user-images.githubusercontent.com/56558508/114101267-0ea5f280-98f8-11eb-9d48-2c96b52872bd.png">
 
 Place the automation APKs in the path **~/AndroidTest/apk**
 
-Change the location of the apk in **PlatformQATest/sgconfig.properties**
+Change the following location in **PlatformQATest/sgconfig.properties**
 
-/Users/lp2-ap-51784761/Documents/ProjectPhoenix/AndroidTest/logs
+- pathToApkRootDir: path of **~/AndroidTest/apk**
+- pathToApkRootDirIosDevice: path of **~/AndroidTest/apk**
+- logRootDir: path of **~/AndroidTest/logs**
+- screenshotsRootDirectory: path of **~/androidautomation/Screenshots**
+- imageMagickLocation: install image magick software and give the path
+- isBaseLineScreenshotMode: Update the Boolean flag based on the usecase.
+      * if true comparision will not happen actual screenshot will be copied to baseline folder
+      * if false comparision will happen (used while testing)
+
