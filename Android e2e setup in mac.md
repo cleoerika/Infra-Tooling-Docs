@@ -125,3 +125,12 @@
 2. Open Visualizer
 3. 
 
+
+
+<img width="1147" alt="image" src="https://user-images.githubusercontent.com/56558508/114101267-0ea5f280-98f8-11eb-9d48-2c96b52872bd.png">
+
+Place the automation APKs in the path **~/AndroidTest/apk**
+
+Change the location of the apk in **PlatformQATest/sgconfig.properties**
+
+/Users/lp2-ap-51784761/Documents/ProjectPhoenix/AndroidTest/logs
