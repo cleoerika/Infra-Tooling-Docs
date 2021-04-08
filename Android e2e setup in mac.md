@@ -9,15 +9,15 @@
   - Kony Visualizer (V9 SP2 FP13) https://community.kony.com/downloads
 
 ### Steps:
-1. Clone the androidautomation and stargategalaxy repository
+1. Clone the **androidautomation** and **stargategalaxy** repository
   - https://github01.hclpnp.com/phoenix-core/androidautomation
   - https://github01.hclpnp.com/phoenix-core/stargategalaxy
 
-2. Navigate to androidautomation folder and modify the url inside .gitmodules
+2. Navigate to **/androidautomation** folder and modify the url inside .gitmodules
   ```
   url = "https://github01.hclpnp.com/phoenix-core/stargategalaxy.git"
   ```
-3. In command line, go to stargategalaxy and run the ff. git commands:
+3. In command line, go to **/stargategalaxy** and run the ff. git commands:
 
   ```
   git submodule init
@@ -34,6 +34,12 @@
   ```
   git submodule update
   ```
+  This will get the **stargategalaxy** as a submodule to your **/androidautomation** repo
+  
+4. Navigate to **/stargategalaxy** repo then **/Stargate** and run **mvn clean install**
+5. Navigate to **~/androidautomation/AndroidStargate** and run **mvn clean install then mvn eclipse:eclipse**
+6. Navigate to **~/androidautomation/PlatformQATests** and run **mvn clean install then mvn eclipse:eclipse**
+7. Import AndroidStargate and PlatformQATest to your eclipse
   
 Download and install Appium Desktop for mac 1.6.3 version from https://github.com/appium/appium-desktop/releases/tag/v1.6.3
 
