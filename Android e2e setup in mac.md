@@ -18,6 +18,7 @@
   ```
   url = "https://github01.hclpnp.com/phoenix-core/stargategalaxy.git"
   ```
+  
 3. In command line, go to **/stargategalaxy** and run the ff. git commands:
 
   ```
@@ -43,25 +44,27 @@
 7. Import **AndroidStargate** and **PlatformQATest** in eclipse
 
 
-Download and install Appium Desktop for mac 1.6.3 version from https://github.com/appium/appium-desktop/releases/tag/v1.6.3
+#### Setting up Appium
+1. Open Appium
 
-<img width="651" alt="image" src="https://user-images.githubusercontent.com/56558508/113621049-b966a880-968d-11eb-8540-713ea6e3671d.png">
+  <img width="651" alt="image" src="https://user-images.githubusercontent.com/56558508/113621049-b966a880-968d-11eb-8540-713ea6e3671d.png">
 
-Click 'Start Server v1.8.1'
+2. Click 'Start Server v1.8.1'
 
-Open Android Studio
+  <img width="653" alt="image" src="https://user-images.githubusercontent.com/56558508/114081671-700d9780-98df-11eb-9cd1-e9fe9e7fbf97.png">
 
-<img width="778" alt="image" src="https://user-images.githubusercontent.com/56558508/113623375-da7cc880-9690-11eb-9bd6-c3dfd1eb60b9.png">
+#### Setting up Android Studio
+1. Open Android Studio
 
-Create New Project
+  <img width="778" alt="image" src="https://user-images.githubusercontent.com/56558508/113623375-da7cc880-9690-11eb-9bd6-c3dfd1eb60b9.png">
 
-Select Empty Activity then click Next
+2. Select **Create New Project** then **Empty Activity** as Project Template then click **Next**
 
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/56558508/113623437-ef595c00-9690-11eb-910f-8b27ee3d9e5b.png">
+  <img width="900" alt="image" src="https://user-images.githubusercontent.com/56558508/113623437-ef595c00-9690-11eb-910f-8b27ee3d9e5b.png">
 
-Set Language to 'Java' and Minimum SDK to 'API 28: Android 9.0 (Pie)'
+3. Set Language to **'Java'** and Minimum SDK to **'API 28: Android 9.0 (Pie)'**
 
-<img width="901" alt="image" src="https://user-images.githubusercontent.com/56558508/113623650-3a736f00-9691-11eb-8a22-79fd25f533f6.png">
+  <img width="901" alt="image" src="https://user-images.githubusercontent.com/56558508/113623650-3a736f00-9691-11eb-8a22-79fd25f533f6.png">
 
 then Finish, the Application will pop 
 
