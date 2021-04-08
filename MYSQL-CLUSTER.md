@@ -4,7 +4,9 @@
  - docker
    * For windows: https://docs.docker.com/docker-for-windows/install/
    * For mac: https://docs.docker.com/docker-for-mac/install/
-  
+
+### Steps:
+
 Using mac local machine:
 
 1. Run a docker pull command
