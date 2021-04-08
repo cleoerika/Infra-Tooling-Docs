@@ -18,13 +18,23 @@
   url = "https://github01.hclpnp.com/phoenix-core/stargategalaxy.git"
   ```
 3. In command line, go to stargategalaxy and run the ff. git commands:
-§ git submodule init
 
-§ git config --file=.gitmodules submodule.stargategalaxy.url <your forked repo URL>
+  ```
+  git submodule init
+  ```
 
-§ git submodule sync
+  ```
+  git config --file=.gitmodules submodule.stargategalaxy.url git@github01.hclpnp.com/phoenix-core/stargategalaxy
+  ```
 
-§ git submodule updat 
+  ```
+  git submodule sync
+  ```
+  
+  ```
+  git submodule update
+  ```
+  
 Download and install Appium Desktop for mac 1.6.3 version from https://github.com/appium/appium-desktop/releases/tag/v1.6.3
 
 <img width="651" alt="image" src="https://user-images.githubusercontent.com/56558508/113621049-b966a880-968d-11eb-8540-713ea6e3671d.png">
