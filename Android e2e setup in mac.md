@@ -151,3 +151,9 @@
       * if true comparision will not happen actual screenshot will be copied to baseline folder
       * if false comparision will happen (used while testing)
 
+3. Create a file 'application.properties' inside **~/AndroidTest/AppiumLab** and modify the input path of getRunDetails() in Record.java
+4. Add the environment details per test case that you will test
+
+<img width="1146" alt="image" src="https://user-images.githubusercontent.com/56558508/114616713-c44aba00-9cd9-11eb-95a3-b3d76e8e1001.png">
+
+
