@@ -157,7 +157,7 @@ where the values:
 
 ANDROID_HOME=~/Android/sdk
 
-PATH=~/Android/sdk/tools:~/Android/sdk/platform-tools:~/Android/sdk/emulator
+PATH=*~/Android/sdk/tools*: *~/Android/sdk/platform-tools*: ~/Android/sdk/emulator
 
 <img width="1146" alt="image" src="https://user-images.githubusercontent.com/56558508/114616713-c44aba00-9cd9-11eb-95a3-b3d76e8e1001.png">
 
