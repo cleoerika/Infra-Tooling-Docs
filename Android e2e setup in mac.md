@@ -1,6 +1,7 @@
 # E2E Android setup in Mac
 
 ### Pre-requisite
+  - git
   - JDK 8
   - Eclipse
   - TestNg for Eclipse
