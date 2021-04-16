@@ -2,6 +2,7 @@
 
 ### Pre-requisite
   - git
+  - Apache Maven
   - JDK 8
   - Eclipse
   - TestNg for Eclipse
