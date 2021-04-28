@@ -152,6 +152,7 @@
   - isBaseLineScreenshotMode: Update the Boolean flag based on the usecase.
       * if true comparision will not happen actual screenshot will be copied to baseline folder
       * if false comparision will happen (used while testing)
+  - jenkinsURL: *any URL* (https://github.com/cleoerika/Infra-Tooling-Docs)
 
 3. Create a file 'application.properties' inside **~/AndroidTest/AppiumLab** and modify the input path of getRunDetails() in Record.java
 4. Add the environment details per test case that you will test
