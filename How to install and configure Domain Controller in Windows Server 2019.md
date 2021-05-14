@@ -53,4 +53,45 @@
 8. In the **Confirmation** tab,  verify the selections and click on the **Install** button. You may or may not select the option **Restart the destination server automatically if required**. It is always a best practice to restart the server post installation.
 9. Once done, it will start the installation process and you can check the same in the **Results** tab. Then click **Close**.
 
+10. Restart VM.
+11. Open again the **Server MAnager** and click the Notification flag icon to the upper right and click **Promote the server into a Domain Controller**
+
+<img width="896" alt="image" src="https://user-images.githubusercontent.com/56558508/118217995-21888580-b4a9-11eb-9b4c-37bc2ade6139.png">
+
+12. **Active Directory Configuration Wizard**. Now, from the Deployment Configuration tab, select **Add a new forest**. Provide a Root Domain name, here it is **adtest.fnxlabs.com**. Then, click on **Next** to continue.
+
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/56558508/118218632-71b41780-b4aa-11eb-82a2-6a04468a560c.png">
+
+13. In the **Domain Controller Option** tab, select a **Forest functional level** and a **Domain functional level** as per your environment. 
+Since this is the first domain controller in the forest, please select the **DNS Server (as we are configure AD integrated DNS)** and the **Global Catalog (GC)** check boxes. 
+    Then, enter the **Active Directory Restore Mode (DSRM)** password, this is used to retrieve/restore Active Directory data. Then, click **Next** to continue
+    
+    <img width="762" alt="image" src="https://user-images.githubusercontent.com/56558508/118219469-1aaf4200-b4ac-11eb-96f9-73753e55f9cd.png">
+    
+    <img width="765" alt="image" src="https://user-images.githubusercontent.com/56558508/118219499-30246c00-b4ac-11eb-9508-6d85ac10cdc7.png">
+
+14. Since we have configured AD integrated DNS Server, you can ignore the DNS Delegation warning as shown in the below screen. Then, click **Next** to continue.
+
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/56558508/118219573-5b0ec000-b4ac-11eb-9c08-b97600b8405c.png">
+
+15. In the **Additional Options** tab, enter a NetBIOS name for your domain. It is suggested to keep the NetBIOS name same as the root domain name (by default, it will fetch the domain name only). Then, click **Next** to continue.
+
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/56558508/118219721-a32de280-b4ac-11eb-830d-70ba06dacea6.png">
+
+16. In the **Path** tab, you have to mention the **Database (NTDS Database), LOG files and SYSVOL** folders path. You can change the default path as per your organization security policies. Now, click **Next** to continue.
+
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/56558508/118219804-ceb0cd00-b4ac-11eb-951f-183cfe24937c.png">
+
+17. In the **Review Options** tab,  you will review the configuration. If everything is as per your need, you can click Next to proceed or otherwise you can go back and change the required setting as per your need and then proceed further.
+
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/56558508/118219850-e5efba80-b4ac-11eb-8690-b2ced4fe63ac.png">
+
+18. In the Prerequisites Check tab,  it will do prerequisite check. 
+
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/56558508/118220068-5565aa00-b4ad-11eb-9dcb-6b2ae8b010dc.png">
+
+19. Once prerequisite checks completed successfully, it will enable/highlight the **Install** option. Then, click on Install button to start the installation process. 
+
+
+20. Once installation completed successfully, you will get the below confirmation message. Close this window and restart the Server. 
 
