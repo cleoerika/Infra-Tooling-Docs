@@ -42,5 +42,15 @@
 
 <img width="784" alt="re Add Roles and Features Wizard" src="https://user-images.githubusercontent.com/56558508/118136190-6cb58080-b436-11eb-94ed-89bf349102d4.png">
 
+5. In the Server Roles tab, put tick mark for **Active Directory Domain Services** (select the **DNS Server** role as well, as we will configure AD integrated DNS server. If not selected, during installation it will automatically select and install the DNS Role). 
 
-6. 
+    Then, it will prompt to show you the associated features for the role. Click on **Add Features** to add those. Then click **Next** to continue. 
+
+ <img width="786" alt="image" src="https://user-images.githubusercontent.com/56558508/118217168-7deaa580-b4a7-11eb-9076-d5b1ae66411b.png">
+
+6. In the **Features** tab, the basic features for this required role are already selected by default. Click **Next** to install continue.
+7. In the next window, it gives brief information about **Active Directory Domain Services** service. Click **Next** to proceed.
+8. In the **Confirmation** tab,  verify the selections and click on the **Install** button. You may or may not select the option **Restart the destination server automatically if required**. It is always a best practice to restart the server post installation.
+9. Once done, it will start the installation process and you can check the same in the **Results** tab. Then click **Close**.
+
+
