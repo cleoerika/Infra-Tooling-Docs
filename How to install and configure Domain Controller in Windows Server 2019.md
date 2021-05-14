@@ -87,11 +87,14 @@ Since this is the first domain controller in the forest, please select the **DNS
 <img width="761" alt="image" src="https://user-images.githubusercontent.com/56558508/118219850-e5efba80-b4ac-11eb-8690-b2ced4fe63ac.png">
 
 18. In the Prerequisites Check tab,  it will do prerequisite check. 
-
+    Once prerequisite checks completed successfully, it will enable/highlight the **Install** option. Then, click on Install button to start the installation process. 
+    
 <img width="763" alt="image" src="https://user-images.githubusercontent.com/56558508/118220068-5565aa00-b4ad-11eb-9dcb-6b2ae8b010dc.png">
 
-19. Once prerequisite checks completed successfully, it will enable/highlight the **Install** option. Then, click on Install button to start the installation process. 
+19. Once installation completed successfully, you will get the below confirmation message. Close this window and restart the Server. 
 
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/56558508/118220235-c60cc680-b4ad-11eb-8958-50812c260505.png">
 
-20. Once installation completed successfully, you will get the below confirmation message. Close this window and restart the Server. 
+20. 
+
 
