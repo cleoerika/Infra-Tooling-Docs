@@ -95,6 +95,17 @@ Since this is the first domain controller in the forest, please select the **DNS
 
 <img width="761" alt="image" src="https://user-images.githubusercontent.com/56558508/118220235-c60cc680-b4ad-11eb-8958-50812c260505.png">
 
-20. 
+20. Login and verify the health of the Domain controller. You can also verify the settings/configurations from the **Active Directory tools like Active Directory Users and Computers** or **Active Directory Domains and Trusts**, etc. You will get all the Active Directory tools in the folder named **Administrative Tools** on the Start menu.
+
+<img width="744" alt="image" src="https://user-images.githubusercontent.com/56558508/118717382-94eb1800-b858-11eb-8207-35e698f9768f.png">
+
+### Important Notes ###
+Issues might occur along the way and these links was a great help.
+https://docs.microsoft.com/en-us/answers/questions/180365/0x2407-can39t-connect-to-ad-domain-computer-rdp.html
+https://www.wintips.org/fix-specified-domain-either-does-not-exist-or-could-not-be-contacted/#
+
+
+
+
 
 
