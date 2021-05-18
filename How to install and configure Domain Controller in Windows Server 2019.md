@@ -103,11 +103,14 @@ Since this is the first domain controller in the forest, please select the **DNS
 ### To test if you were able to connect to that AD server ###
 - To search LDAP using the admin account
 ```ldapsearch -x -h <ldap_host> -b <search_base> -D <bind_dn> -w <password>```
-
+```
+ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane Doe,CN=Users,DC=adtest,DC=fnxlabs,DC=com" -w Password~1
+```
+<img width="1334" alt="image" src="https://user-images.githubusercontent.com/56558508/118719643-4d19c000-b85b-11eb-9bd4-94770ab0ab26.png">
 <img width="142" alt="image" src="https://user-images.githubusercontent.com/56558508/118719073-961d4480-b85a-11eb-8d7f-8774a002c9ee.png">
 
 - To search LDAP using the admin account with objectclass for a narrowed result
-```ldapsearch -x -h <ldap_host> -b <search_base> -D <bind_dn> -w <password> "(&(objectClass=user)(objectCategory=Person))"```
+```ldapsearch -x -h <ldap_host> -b <search_base> -D <bind_dn> -w <password> "(object_type)=(object_value) <optional_attributes>"```
 
 ```
 ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane Doe,CN=Users,DC=adtest,DC=fnxlabs,DC=com" -w Password~1 "(&(objectClass=user)(objectCategory=Person))" cn
@@ -115,12 +118,21 @@ ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane
 
 <img width="1660" alt="image" src="https://user-images.githubusercontent.com/56558508/118718259-9bc65a80-b859-11eb-90f8-0434f5465211.png">
 
+- To search LDAP using the admin account with conditions
+```ldapsearch -x -h <ldap_host> -b <search_base> -D <bind_dn> -w <password> "(object_type)=(object_value) <optional_attributes>"```
+
 ```
 ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane Doe,CN=Users,DC=adtest,DC=fnxlabs,DC=com" -w Password~1 "(&(objectClass=user)(objectCategory=Person)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName=jdoe)(primaryGroupID=513))" cn
 ```
 
+<img width="1687" alt="image" src="https://user-images.githubusercontent.com/56558508/118720182-e1842280-b85b-11eb-900c-dc07ad5c0db7.png">
 
+
+```
 ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane Doe,CN=Users,DC=adtest,DC=fnxlabs,DC=com" -w Password~1 "(&(objectClass=user)(objectCategory=Person)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(primaryGroupID=513))" cn
+```
+
+<img width="1769" alt="image" src="https://user-images.githubusercontent.com/56558508/118720271-011b4b00-b85c-11eb-96b2-fbea52f2cd5e.png">
 
 
 
