@@ -99,10 +99,35 @@ Since this is the first domain controller in the forest, please select the **DNS
 
 <img width="744" alt="image" src="https://user-images.githubusercontent.com/56558508/118717382-94eb1800-b858-11eb-8207-35e698f9768f.png">
 
+
+### To test if you were able to connect to that AD server ###
+- To search LDAP using the admin account
+```ldapsearch -x -h <ldap_host> -b <search_base> -D <bind_dn> -w <password>```
+
+<img width="142" alt="image" src="https://user-images.githubusercontent.com/56558508/118719073-961d4480-b85a-11eb-8d7f-8774a002c9ee.png">
+
+- To search LDAP using the admin account with objectclass for a narrowed result
+```ldapsearch -x -h <ldap_host> -b <search_base> -D <bind_dn> -w <password> "(&(objectClass=user)(objectCategory=Person))"```
+
+```
+ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane Doe,CN=Users,DC=adtest,DC=fnxlabs,DC=com" -w Password~1 "(&(objectClass=user)(objectCategory=Person))" cn
+```
+
+<img width="1660" alt="image" src="https://user-images.githubusercontent.com/56558508/118718259-9bc65a80-b859-11eb-90f8-0434f5465211.png">
+
+```
+ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane Doe,CN=Users,DC=adtest,DC=fnxlabs,DC=com" -w Password~1 "(&(objectClass=user)(objectCategory=Person)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(sAMAccountName=jdoe)(primaryGroupID=513))" cn
+```
+
+
+ldapsearch -x -h adtest.fnxlabs.com -b "dc=adtest,dc=fnxlabs,dc=com" -D "CN=Jane Doe,CN=Users,DC=adtest,DC=fnxlabs,DC=com" -w Password~1 "(&(objectClass=user)(objectCategory=Person)(!(userAccountControl:1.2.840.113556.1.4.803:=2))(primaryGroupID=513))" cn
+
+
+
 ### Important Notes ###
 Issues might occur along the way and these links was a great help.
-https://docs.microsoft.com/en-us/answers/questions/180365/0x2407-can39t-connect-to-ad-domain-computer-rdp.html
-https://www.wintips.org/fix-specified-domain-either-does-not-exist-or-could-not-be-contacted/#
+- https://docs.microsoft.com/en-us/answers/questions/180365/0x2407-can39t-connect-to-ad-domain-computer-rdp.html
+- https://www.wintips.org/fix-specified-domain-either-does-not-exist-or-could-not-be-contacted/#
 
 
 
