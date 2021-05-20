@@ -141,6 +141,9 @@ Issues might occur along the way and these links was a great help.
 - https://docs.microsoft.com/en-us/answers/questions/180365/0x2407-can39t-connect-to-ad-domain-computer-rdp.html
 - https://www.wintips.org/fix-specified-domain-either-does-not-exist-or-could-not-be-contacted/#
 
+### cheatsheets
+- https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/
+
 
 
 
