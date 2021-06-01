@@ -5,7 +5,7 @@
 3. As we'll configure Active Directory-integrated DNS, therefore change the DNS settings in the network interface and set the same server IP address as the primary DNS server.
 
 
-### Assign static IP address to the server and set it also as the primary DNS server
+### Assign static IP address to the server and set it also as the primary DNS(Domain Name System) server
 
 1. Open command prompt and run this command
 ```ipconfig /all```
